@@ -90,3 +90,15 @@ func (dict Dictionary[K, V]) String() string {
 	str += "}"
 	return str
 }
+
+// lo mismo que arriba pero en una sola línea. O(n)
+func (dict Dictionary[K, V]) StringLn() string {
+	var str string
+	str = "{"
+	var key K
+	for key = range dict.mapa {
+		str += fmt.Sprintf("%v: %v, ", key, dict.mapa[key])
+	}
+	str += "}"
+	return str
+}

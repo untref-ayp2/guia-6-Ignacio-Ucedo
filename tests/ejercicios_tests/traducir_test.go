@@ -1,8 +1,8 @@
 package tests
 
 import (
-	"guia6/ejercicios"
 	"guia6/dictionary"
+	"guia6/ejercicios"
 	"testing"
 )
 
@@ -14,4 +14,4 @@ func TestTraducir(t *testing.T) {
 	if salida != "Calabozo error Dragones" {
 		t.Errorf("La traducción es %v, pero deberían ser %v", salida, "Calabozo error Dragones")
 	}
-}
+} // en realidad esto está bien pero escribieron la salida de otra manera.
